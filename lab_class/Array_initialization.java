@@ -1,4 +1,3 @@
-
 package lab_class;
 import java.util.Scanner;
 
@@ -10,7 +9,6 @@ public class Array_initialization {
 
 
         int[]  arr = new int[size];
-
         for(int i =0;i<size;i++){
             System.out.println("Enter the element of " + i +"th element");
             int k = sc.nextInt();
