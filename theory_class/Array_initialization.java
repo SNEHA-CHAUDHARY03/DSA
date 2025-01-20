@@ -1,4 +1,5 @@
-package lab_class;
+package theory_class;
+
 import java.util.Scanner;
 
 public class Array_initialization {

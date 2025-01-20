@@ -1,3 +1,5 @@
+package theory_class;
+
 public class sorting{
     public static void selectionSort(int[] arr){
         int n = arr.length;
@@ -41,7 +43,7 @@ public class sorting{
         //         }
         //     }
         //     int temp= arr[i];
-        //     arr[i] = arr[idx];
+        //     arr[i] = arr[idx]; 
         //     arr[idx] = temp;
         // }
         // for(int i=0;i<arr.length;i++){
@@ -51,8 +53,29 @@ public class sorting{
         /// Selection sort
         
         selectionSort(arr);
-        for( int i:arr){
-            System.out.println(i);
+        // for( int i:arr){
+        //     System.out.println(i);
+        // }
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////
+        /// binary search 
+        int key=3;
+        int start= 0;
+        int end= arr.length-1;
+        while (start<=end){
+            int mid = (start+end)/2;
+            if(arr[mid]==key){
+                System.out.println(mid);
+                break;
+            }
+            else if(arr[mid]< key){
+                start = mid+1;
+            }
+            else{
+                end = mid-1;
+            }
+            start++;
+            end--;
         }
     }
 }

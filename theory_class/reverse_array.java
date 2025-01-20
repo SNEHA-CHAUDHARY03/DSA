@@ -1,4 +1,5 @@
-package lab_class;
+package theory_class;
+
 import java.util.Scanner;
 class reverse_array{
     public static void swapping ( int i, int j){
